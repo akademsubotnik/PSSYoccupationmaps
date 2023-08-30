@@ -1,5 +1,4 @@
 # PercentOfPSTerritoryUnderIL
 PercentOfPSTerritoryUnderIL
 
-ToDo:
-  Find a dynamic map of Israeli occupation of Palestine
+We will self host a map with leaflet and show occupation of palestine similar to how deepstateua shows occupation of ukraine
