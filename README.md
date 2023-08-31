@@ -7,7 +7,9 @@ PercentOfPSTerritoryUnderIL
 
 To run:
   $git clone and open in vscode
+  
   install live server vscode plugin
+  
   right click on index.html and click open in live server
 
 
