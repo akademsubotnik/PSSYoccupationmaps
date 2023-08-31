@@ -13,4 +13,7 @@ To run:
 
 
 To do:
-  Find a better way to do this....docker??? can you open google chrome with docker...????
+  * Find a way to add port in docker!!!!
+Docker: 
+* https://hub.docker.com/_/httpd
+* docker run -dit --name my-running-app -p 8080:80 my-apache2
