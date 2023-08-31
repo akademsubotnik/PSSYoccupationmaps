@@ -27,7 +27,7 @@
 <script>
     
     var map = L.map('map').setView([31.9522, 35.2332], 8);
-    L.tileLayer('https://tile.jawg.io/jawg-sunny/{z}/{x}/{y}.png?access-token={accessToken}&lang=en', {
+    L.tileLayer('https://tile.jawg.io/jawg-terrain/{z}/{x}/{y}.png?access-token={accessToken}&lang=en', {
         attribution: '<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         minZoom: 0,
         maxZoom: 22,
@@ -36,17 +36,9 @@
     }).addTo(map);
 </script>
 
-<!-- var map = 
-L.tileLayer('https://tile.jawg.io/jawg-sunny/{z}/{x}/{y}.png?access-token={accessToken}&lang=en', {
-	attribution: '<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-	minZoom: 0,
-	maxZoom: 22,
-	subdomains: 'abcd',
-	accessToken: 'LLYhJNXbPU0Z9OKfbSduoiXYXGbL8BbvCKIsIqQpA6yqjtJMbZIqB6Z76JhO5Gly'
-});
 
-var map = L.map('map').setView([31.9522, 35.2332], 8);
+<!-- var map = L.map('map').setView([31.9522, 35.2332], 8);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '© OpenStreetMap'
-}).addTo(map); --> -->
+}).addTo(map);  -->
