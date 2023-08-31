@@ -34,8 +34,39 @@
         subdomains: 'abcd',
         accessToken: 'LLYhJNXbPU0Z9OKfbSduoiXYXGbL8BbvCKIsIqQpA6yqjtJMbZIqB6Z76JhO5Gly'
     }).addTo(map);
+
+var polygon = L.polygon([
+    [35.2283477, 32.6396509],
+    [35.2033996, 32.6930012],
+    [35.2301787, 32.7409315],
+    [35.3379821, 32.7611353],
+    [35.3990935, 32.7518998],
+    [35.4347991, 32.6987773],
+    [35.4512786, 32.6409995],
+    [35.4325103, 32.5993764],
+    [35.3670501, 32.5617834],
+    [35.2819061, 32.5594695],
+    [35.2352142, 32.5826061],
+    [35.2283477, 32.6375317]
+]).addTo(map);
+
+polygon.bindPopup("I am a polygon.");
+
+var circle = L.circle([31.9522, 35.2332], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 50000
+}).addTo(map);
+
+
 </script>
 
+<!-- var polygon = L.polygon([
+    [51.509, -0.08],
+    [51.503, -0.06],
+    [51.51, -0.047]
+]).addTo(map); -->
 
 <!-- var map = L.map('map').setView([31.9522, 35.2332], 8);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
