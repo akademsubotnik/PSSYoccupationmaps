@@ -16,4 +16,4 @@ To do:
   * Find a way to add port in docker!!!!
 Docker: 
 * https://hub.docker.com/_/httpd
-* docker run -dit --name my-running-app -p 8080:80 my-apache2
+* docker run -dit --name iloccupyps -p 8080:80 akademsubotnik/iloccupyps
