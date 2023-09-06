@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device.width, initial-scale=1.0">
+    <title>Deep State PS</title>
+
+    <!--- leaflet css -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!--- leaflet js -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <style>
+        #map {
+            width: 100%;
+            height: 100vh;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+</body>
+</html>
+
+<script>
+    //Create Map
+    var map = L.map('map').setView([34.9583741974874, 38.46667595485388], 8);
+    L.tileLayer('https://tile.jawg.io/jawg-terrain/{z}/{x}/{y}.png?access-token={accessToken}&lang=en', {
+        attribution: '<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        minZoom: 0,
+        maxZoom: 22,
+        subdomains: 'abcd',
+        accessToken: 'LLYhJNXbPU0Z9OKfbSduoiXYXGbL8BbvCKIsIqQpA6yqjtJMbZIqB6Z76JhO5Gly'
+    }).addTo(map);
+
+    var northwest_turkish_occupation =  [
+    [36.29889755569549, 36.694443913875986],
+    [36.34178585575845, 36.915178283924575],
+    [36.63386674880431, 37.08647489045744],
+    [36.763878232047816, 36.99425764611716],
+    [36.790827306689835, 36.83598585768544],
+    [36.830305704592, 36.66522570329058],
+    [36.493314875492686, 36.54828139123741],
+    [36.29889755569549, 36.694443913875986]
+    ];
+    var northwest_turkish_occupation_polygon = L.polygon(northwest_turkish_occupation, {color: 'red', fillColor: 'red', weight: 1}).addTo(map);
+    northwest_turkish_occupation_polygon.bindPopup("x km");
+
+
+    var northeast_turkish_occupation =  [
+    [36.55125447865421, 37.01708860838169],
+    [36.63386674880431, 37.08647489045744],
+    [36.82614923244709, 38.018389419774216],
+    [36.66072277656633, 38.06976640632475],
+    [36.55125447865421, 37.01708860838169]
+    ];
+    var northeast_turkish_occupation_polygon = L.polygon(northeast_turkish_occupation, {color: 'red', fillColor: 'red', weight: 1}).addTo(map);
+    northeast_turkish_occupation_polygon.bindPopup("x km");
+
+    var also_occupation =  [
+    [36.8244162610677, 38.01414812058519],
+    [34.47969032563696, 40.99281631634758],
+    [37.24154995439588, 42.30568251800244],
+    [36.8244162610677, 38.01414812058519]
+    ];
+    var also_occupation_polygon = L.polygon(also_occupation, {color: 'red', fillColor: 'yellow', weight: 1}).addTo(map);
+    also_occupation_polygon.bindPopup("x km");
+
+    var israeli_occupation =  [
+    [33.28320051364612, 35.615008735242014],
+    [33.33369911314422, 35.81825580411745],
+    [32.72579142774063, 35.77431049192816],
+    [32.70268233224962, 35.59303607914737],
+    [33.28320051364612, 35.615008735242014]
+    ];
+    var israeli_occupation_polygon = L.polygon(israeli_occupation, {color: 'red', fillColor: 'orange', weight: 1}).addTo(map);
+    israeli_occupation_polygon.bindPopup("x km");
+
+</script>
+
+<!-- map.fitBounds(polyline.getBounds()); --> -->
+
+
+
+
+<!-- var circle = L.circle([31.9522, 35.2332], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 50000
+}).addTo(map); -->
+
+
+<!-- var polygon = L.polygon([
+    [51.509, -0.08],
+    [51.503, -0.06],
+    [51.51, -0.047]
+]).addTo(map); -->
+
+<!-- var map = L.map('map').setView([31.9522, 35.2332], 8);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '© OpenStreetMap'
+}).addTo(map);  -->
